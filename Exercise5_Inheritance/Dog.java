@@ -1,0 +1,25 @@
+package oops;
+
+public class Dog extends Animal implements Pet{
+private String owner;
+
+public Dog(String name,String owner) {
+	super(name);
+	this.owner=owner;
+}
+@Override
+public void speak() {
+	System.out.println(name+" barks:woof!");
+}
+@Override
+public void play() {
+	System.out.println(name+" plays fetch with"+owner);
+}
+@Override
+public String getOwnerName() {
+	return owner;
+}
+public void wagtail() {
+	System.out.println(name+" is wagging its tail.");
+}
+}
